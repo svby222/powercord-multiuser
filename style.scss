@@ -1,0 +1,32 @@
+#mu-add-user-token {
+  flex-grow: 1;
+}
+
+#mu-settings-flex .pc-inputWrapper {
+  width: 100%;
+  margin-right: 20px;
+}
+
+.mu-settings-gameCard {
+  position: relative;
+  padding: 20px 0;
+  box-shadow: 0 1px 0 0 #dcddde;
+}
+
+.mu-settings-gameName {
+  color: #4f545c;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background-color: transparent;
+  padding: 0 4px;
+  margin-left: -5px;
+  width: 240px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  z-index: 1;
+}
+
+.mu-settings-gameNameLastPlayed {
+  flex: 1;
+}
