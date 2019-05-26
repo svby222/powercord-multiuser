@@ -4,11 +4,8 @@ const {Button, AsyncComponent} = require('powercord/components');
 const Input = AsyncComponent.from(getModuleByDisplayName('TextInput'));
 const FormTitle = AsyncComponent.from(getModuleByDisplayName('FormTitle'));
 const FormText = AsyncComponent.from(getModuleByDisplayName('FormText'));
-const FormDivider = AsyncComponent.from(getModuleByDisplayName('FormDivider'));
 const FormSection = AsyncComponent.from(getModuleByDisplayName('FormSection'));
 const Flex = AsyncComponent.from(getModuleByDisplayName('Flex'));
-const FlexChild = AsyncComponent.from(getModuleByDisplayName('FlexChild'));
-const Modal = AsyncComponent.from(getModuleByDisplayName('Modal'));
 
 const Game = AsyncComponent.from(getModuleByDisplayName('Game'));
 const HoverRoll = AsyncComponent.from(getModuleByDisplayName('HoverRoll'));
