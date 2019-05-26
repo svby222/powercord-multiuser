@@ -1,8 +1,9 @@
 const {remote} = require('electron');
+
 const oldAdd = document.addEventListener;
 document.addEventListener = function (type, listener) {
     if (type === "beforeunload") {
-        //do nothing
+        // do nothing
     } else {
         let args = [];
         args[0] = type;

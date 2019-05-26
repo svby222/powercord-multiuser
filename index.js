@@ -78,7 +78,7 @@ module.exports = class Mu extends Plugin {
         delete opts.x;
         delete opts.y;
 
-        opts.webPreferences.preload = `${__dirname}/test.js`;
+        opts.webPreferences.preload = `${__dirname}/preload.js`;
         console.log(opts);
 
         const window = new BrowserWindow(opts);
