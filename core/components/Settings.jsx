@@ -21,19 +21,19 @@ module.exports = class Settings extends React.Component {
   renderUserList () {
     return this.state.users.map((user) => (
       <div
-        className="flexCenter-3_1bcw flex-1O1GKY justifyCenter-3D2jYp alignCenter-1dQNNs pc-flexCenter pc-flex pc-justifyCenter pc-alignCenter game-1ipmAa pc-game card-FDVird pc-card">
+        className="flexCenter-3_1bcw flex-1O1GKY justifyCenter-3D2jYp alignCenter-1dQNNs game-1ipmAa card-FDVird">
         <div
-          className="gameNameLastPlayed-3LJo8n pc-gameNameLastPlayed vertical-V37hAW flex-1O1GKY directionColumn-35P_nr pc-vertical pc-flex pc-directionColumn">
-          <input className="gameName-1RiWHm pc-gameName gameNameInput-385LoS pc-gameNameInput"
+          className="gameNameLastPlayed-3LJo8n vertical-V37hAW flex-1O1GKY directionColumn-35P_nr">
+          <input className="gameName-1RiWHm gameNameInput-385LoS"
             type="text" maxLength="128"
             defaultValue={user.nickname || 'Untitled'}
             onChange={(e) => this.modifyUser(user, (user) => user.nickname = e.target.value)}/>
-          <div className="lastPlayed-3bQ7Bo pc-lastPlayed">
+          <div className="lastPlayed-3bQ7Bo">
             <HoverRoll hoverText={user.token}>Hover to reveal token</HoverRoll>
           </div>
         </div>
         <div tabIndex="0"
-          className="button-mM-y8i pc-button removeGame-2JFGPn pc-removeGame"
+          className="button-mM-y8i removeGame-2JFGPn"
           role="button"
           onClick={() => this.removeUser(user)}>
             Remove user
@@ -51,14 +51,14 @@ module.exports = class Settings extends React.Component {
           {this.renderUserList()}
         </FormSection>
 
-        <FormSection className="marginTop40-i-78cZ pc-marginTop40">
+        <FormSection className="marginTop40-i-78cZ">
           <FormTitle>Add user</FormTitle>
           <Flex id="mu-settings-flex" style={{ justifyContent: 'space-between' }}>
             <Input id="mu-add-user-token" defaultValue={this.state.currentToken}
               onChange={this.updateCurrentToken.bind(this)}/>
             <Button onClick={this.addUser.bind(this)}>Add user</Button>
           </Flex>
-          <FormText className="note-1V3kyJ pc-note description-3_Ncsb pc-description">
+          <FormText className="note-1V3kyJ description-3_Ncsb">
               The user's token.
           </FormText>
         </FormSection>
