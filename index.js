@@ -22,7 +22,7 @@ module.exports = class Mu extends Plugin {
 
   pluginWillUnload () {
     uninject('pc-mu-avatar');
-    forceUpdateElement('.pc-inner');
+    forceUpdateElement('.inner-1W0Bkn');
   }
 
   handleSave () {
@@ -58,7 +58,7 @@ module.exports = class Mu extends Plugin {
       return res;
     });
 
-    getOwnerInstance(await waitFor('.pc-inner')).forceUpdate();
+    getOwnerInstance(await waitFor('.inner-1W0Bkn')).forceUpdate();
   }
 
   createNewInstance (token) {
