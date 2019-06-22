@@ -83,10 +83,7 @@ module.exports = class Settings extends React.Component {
   }
 
   removeUser (user) {
-    const index = this.state.users.indexOf(user);
-    if (index > 0) {
-      this._set('users', this.state.users.filter(u => u !== user));
-    }
+    this._set('users', this.state.users.filter(u => u !== user));
   }
 
   modifyUser (user, adapter) {
